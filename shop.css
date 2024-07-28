@@ -80,7 +80,7 @@
   padding: 0 var(--padding-2xl) 0 var(--padding-xl);
   top: 0;
   z-index: 99;
-  position: sticky;
+  position: relative;
 }
 .tbd-shop,
 .tbd5 {
