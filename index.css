@@ -90,7 +90,7 @@
   padding: 0 var(--padding-xl) 0 var(--padding-11xl);
   top: 0;
   z-index: 99;
-  position: sticky;
+  position: relative;
 }
 .border,
 .icon {
