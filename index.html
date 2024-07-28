@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin Slab:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="home">
+      <b class="tbd" id="tBDText">TBD</b>
+      <div class="nav-bar-wrapper">
+        <nav class="nav-bar">
+          <div class="shop" id="shopContainer">
+            <a class="shop1">Shop</a>
+          </div>
+          <div class="music" id="musicContainer">
+            <a class="music1">Music</a>
+          </div>
+          <a class="about" id="aboutText">about</a>
+        </nav>
+      </div>
+      <section class="frame-parent">
+        <div class="main-media-wrapper">
+          <div class="main-media" id="mainMediaContainer">
+            <img class="icon" alt="" src="./public/images@2x.png" />
+
+            <div class="border"></div>
+          </div>
+        </div>
+        <div class="frame-group">
+          <div class="join-wrapper">
+            <b class="join" id="joinText">Join</b>
+          </div>
+          <b class="klandus">@ 2024 Kélandus</b>
+          <div class="terms-parent">
+            <b class="terms">Terms</b>
+            <b class="privacy">Privacy</b>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      var tBDText = document.getElementById("tBDText");
+      if (tBDText) {
+        tBDText.addEventListener("click", function (e) {
+          window.location.href = "./shop.html";
+        });
+      }
+      
+      var shopContainer = document.getElementById("shopContainer");
+      if (shopContainer) {
+        shopContainer.addEventListener("click", function (e) {
+          window.location.href = "./shop.html";
+        });
+      }
+      
+      var musicContainer = document.getElementById("musicContainer");
+      if (musicContainer) {
+        musicContainer.addEventListener("click", function (e) {
+          window.location.href = "./music.html";
+        });
+      }
+      
+      var aboutText = document.getElementById("aboutText");
+      if (aboutText) {
+        aboutText.addEventListener("click", function (e) {
+          window.location.href = "./about-me.html";
+        });
+      }
+      
+      var mainMediaContainer = document.getElementById("mainMediaContainer");
+      if (mainMediaContainer) {
+        mainMediaContainer.addEventListener("click", function (e) {
+          window.location.href = "./media.html";
+        });
+      }
+      
+      var joinText = document.getElementById("joinText");
+      if (joinText) {
+        joinText.addEventListener("click", function (e) {
+          window.location.href = "./join.html";
+        });
+      }
+      </script>
+  </body>
+</html>

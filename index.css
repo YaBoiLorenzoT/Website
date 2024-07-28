@@ -1,0 +1,227 @@
+.shop1,
+.tbd {
+  height: 25px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.tbd {
+  width: 100px;
+  text-transform: capitalize;
+  display: none;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.shop1 {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: inherit;
+}
+.music1,
+.shop,
+.shop1 {
+  flex: 1;
+  display: flex;
+}
+.shop {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.music1 {
+  text-decoration: none;
+  height: 25px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: inherit;
+  align-items: center;
+  justify-content: center;
+}
+.about,
+.music {
+  flex: 1;
+  display: flex;
+  cursor: pointer;
+}
+.music {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.about {
+  text-decoration: none;
+  height: 25px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: inherit;
+  align-items: center;
+  justify-content: center;
+}
+.nav-bar,
+.nav-bar-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.nav-bar {
+  margin: 0;
+  width: 377px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-crimson-200);
+  border: 2px solid var(--color-white);
+  justify-content: flex-start;
+  padding: var(--padding-mini) var(--padding-xl) var(--padding-mini)
+    var(--padding-4xl);
+  gap: var(--gap-mini);
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-crimson-100);
+  font-family: var(--font-josefin-slab);
+}
+.nav-bar-wrapper {
+  align-self: stretch;
+  justify-content: center;
+  padding: 0 var(--padding-xl) 0 var(--padding-11xl);
+  top: 0;
+  z-index: 99;
+  position: sticky;
+}
+.border,
+.icon {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.icon {
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  display: none;
+}
+.border {
+  border-radius: var(--br-3xs);
+  border: 2px solid var(--color-white);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.main-media {
+  height: 517px;
+  width: 881px;
+  position: relative;
+  background-image: url(./public/images@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  max-width: 100%;
+  cursor: pointer;
+}
+.main-media-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl) 0 var(--padding-11xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.join {
+  align-self: stretch;
+  position: relative;
+  cursor: pointer;
+}
+.join-wrapper {
+  width: 162px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 7px 0 0;
+  box-sizing: border-box;
+}
+.klandus {
+  width: 155px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.privacy,
+.terms {
+  flex: 1;
+  position: relative;
+  text-transform: capitalize;
+}
+.privacy {
+  margin-left: -38px;
+}
+.frame-group,
+.terms-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.terms-parent {
+  width: 162px;
+  justify-content: flex-start;
+}
+.frame-group {
+  align-self: stretch;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.frame-parent,
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: var(--font-size-mini);
+  color: var(--color-crimson-100);
+  font-family: var(--font-jost);
+}
+.frame-parent {
+  align-self: stretch;
+  gap: 48px;
+  max-width: 100%;
+}
+.home {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-black);
+  padding: var(--padding-20xl) 11px var(--padding-240xl) 0;
+  box-sizing: border-box;
+  gap: var(--gap-56xl);
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 725px) {
+  .frame-parent {
+    gap: 24px;
+  }
+  .home {
+    gap: var(--gap-18xl);
+  }
+}
+@media screen and (max-width: 650px) {
+  .frame-group {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .home {
+    gap: var(--gap-lgi);
+  }
+}

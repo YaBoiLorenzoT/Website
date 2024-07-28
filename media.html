@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./media.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin Slab:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="media">
+      <div class="media-inner">
+        <div class="frame-container">
+          <div class="nav-bar-frame">
+            <button class="nav-bar5">
+              <div class="home9" id="homeContainer">
+                <a class="home10">HOME</a>
+              </div>
+            </button>
+          </div>
+          <div class="meant-to-be">Meant to be viewed on desktop</div>
+        </div>
+      </div>
+      <div class="frame-div">
+        <div class="grid-item-parent">
+          <img
+            class="grid-item-icon"
+            loading="lazy"
+            alt=""
+            src="./public/1@2x.png"
+          />
+
+          <div class="divider-wrapper">
+            <img
+              class="divider-icon"
+              loading="lazy"
+              alt=""
+              src="./public/3@2x.png"
+            />
+          </div>
+          <div class="divider-container">
+            <img
+              class="divider-icon1"
+              loading="lazy"
+              alt=""
+              src="./public/6@2x.png"
+            />
+          </div>
+          <div class="shape-wrapper">
+            <img
+              class="shape-icon"
+              loading="lazy"
+              alt=""
+              src="./public/5@2x.png"
+            />
+          </div>
+          <img class="icon1" loading="lazy" alt="" src="./public/8@2x.png" />
+        </div>
+        <div class="footer-content-parent">
+          <img
+            class="footer-content-icon"
+            loading="lazy"
+            alt=""
+            src="./public/2@2x.png"
+          />
+
+          <img
+            class="divider-icon2"
+            loading="lazy"
+            alt=""
+            src="./public/4@2x.png"
+          />
+
+          <img
+            class="placeholders-icon"
+            loading="lazy"
+            alt=""
+            src="./public/7@2x.png"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var homeContainer = document.getElementById("homeContainer");
+      if (homeContainer) {
+        homeContainer.addEventListener("click", function (e) {
+          window.location.href = "./home.html";
+        });
+      }
+      </script>
+  </body>
+</html>

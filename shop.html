@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./shop.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin Slab:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="shop4">
+      <div class="navigation2">
+        <nav class="nav-bar4">
+          <div class="home7" id="homeContainer">
+            <a class="home8">Home</a>
+          </div>
+          <div class="music3" id="musicContainer">
+            <a class="music4">Music</a>
+          </div>
+          <a class="bag">Bag</a>
+        </nav>
+      </div>
+      <b class="tbd5" id="tBDText">TBD</b>
+      <section class="shop5">
+        <h1 class="tbd-shop">TBD SHOP</h1>
+      </section>
+      <div class="footer2">
+        <div class="join-frame">
+          <b class="join3" id="joinText">Join</b>
+        </div>
+        <b class="klandus3">@ 2024 Kélandus</b>
+        <div class="legal1">
+          <b class="terms2">Terms</b>
+          <b class="privacy2">Privacy</b>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var homeContainer = document.getElementById("homeContainer");
+      if (homeContainer) {
+        homeContainer.addEventListener("click", function (e) {
+          window.location.href = "./home.html";
+        });
+      }
+      
+      var musicContainer = document.getElementById("musicContainer");
+      if (musicContainer) {
+        musicContainer.addEventListener("click", function (e) {
+          window.location.href = "./music.html";
+        });
+      }
+      
+      var tBDText = document.getElementById("tBDText");
+      if (tBDText) {
+        tBDText.addEventListener("click", function (e) {
+          window.location.href = "./shop.html";
+        });
+      }
+      
+      var joinText = document.getElementById("joinText");
+      if (joinText) {
+        joinText.addEventListener("click", function (e) {
+          window.location.href = "./join.html";
+        });
+      }
+      </script>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+.home2 {
+  text-decoration: none;
+  height: 25px;
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-xl);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: var(--font-josefin-slab);
+  color: var(--color-crimson-100);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home1,
+.nav-bar1,
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.home1 {
+  width: 100px;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.nav-bar1,
+.navigation {
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.nav-bar1 {
+  cursor: pointer;
+  border: 2px solid var(--color-white);
+  padding: var(--padding-mini) var(--padding-xl);
+  background-color: var(--color-crimson-200);
+  width: 377px;
+  border-radius: var(--br-3xs);
+}
+.navigation {
+  width: 1263px;
+  padding: 0 0 0 var(--padding-12xs);
+}
+.klandus1 {
+  margin: 0;
+  width: 649px;
+  position: relative;
+  font-size: inherit;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.intro {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl) 0 var(--padding-2xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.discription {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-mini);
+  text-transform: uppercase;
+  font-weight: 800;
+  white-space: pre-wrap;
+}
+.content {
+  width: 1262.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 0 149px;
+  box-sizing: border-box;
+  gap: 54px;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-6xl);
+  color: var(--color-crimson-100);
+  font-family: var(--font-jost);
+}
+.resume {
+  height: 32px;
+  width: 649px;
+  position: relative;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: 800;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+  cursor: pointer;
+}
+.about-me,
+.resume-wrapper {
+  display: flex;
+  box-sizing: border-box;
+}
+.resume-wrapper {
+  width: 1263px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 0 0 var(--padding-12xs);
+  max-width: 100%;
+}
+.about-me {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-black);
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-20xl) var(--padding-4xl) 286px var(--padding-xl);
+  gap: 130px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-size: var(--font-size-mini);
+  color: var(--color-crimson-100);
+  font-family: var(--font-jost);
+}
+@media screen and (max-width: 1200px) {
+  .about-me {
+    gap: 65px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .content {
+    gap: 27px;
+  }
+  .about-me {
+    gap: 32px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .home2 {
+    font-size: var(--font-size-base);
+  }
+  .klandus1 {
+    font-size: var(--font-size-xl);
+  }
+  .about-me {
+    gap: 16px;
+  }
+}

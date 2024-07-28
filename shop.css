@@ -1,0 +1,209 @@
+.home7,
+.home8 {
+  flex: 1;
+  display: flex;
+}
+.home8 {
+  text-decoration: none;
+  height: 25px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: inherit;
+  align-items: center;
+  justify-content: center;
+}
+.home7 {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.music4 {
+  text-decoration: none;
+  height: 25px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: inherit;
+  align-items: center;
+  justify-content: center;
+}
+.bag,
+.music3,
+.music4 {
+  flex: 1;
+  display: flex;
+}
+.music3 {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.bag {
+  text-decoration: none;
+  height: 25px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: inherit;
+  align-items: center;
+  justify-content: center;
+}
+.nav-bar4,
+.navigation2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.nav-bar4 {
+  margin: 0;
+  width: 377px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-crimson-200);
+  border: 2px solid var(--color-white);
+  justify-content: flex-start;
+  padding: var(--padding-mini) var(--padding-xl) var(--padding-mini)
+    var(--padding-4xl);
+  gap: var(--gap-mini);
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-crimson-100);
+  font-family: var(--font-josefin-slab);
+}
+.navigation2 {
+  align-self: stretch;
+  justify-content: center;
+  padding: 0 var(--padding-2xl) 0 var(--padding-xl);
+  top: 0;
+  z-index: 99;
+  position: sticky;
+}
+.tbd-shop,
+.tbd5 {
+  position: relative;
+  flex-shrink: 0;
+}
+.tbd5 {
+  width: 100px;
+  height: 25px;
+  text-transform: capitalize;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.tbd-shop {
+  margin: 0;
+  width: 621px;
+  font-size: inherit;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.join3,
+.shop5 {
+  align-self: stretch;
+}
+.shop5 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-2xl) 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-51xl);
+  color: var(--color-white);
+  font-family: var(--font-jost);
+}
+.join3 {
+  position: relative;
+  cursor: pointer;
+}
+.join-frame {
+  width: 179px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-5xl) 0 0;
+  box-sizing: border-box;
+}
+.klandus3 {
+  width: 155px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.privacy2,
+.terms2 {
+  flex: 1;
+  position: relative;
+  text-transform: capitalize;
+}
+.privacy2 {
+  margin-left: -33px;
+}
+.legal1 {
+  width: 167px;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.footer2,
+.legal1,
+.shop4 {
+  display: flex;
+  align-items: flex-start;
+}
+.footer2 {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 var(--padding-12xs) 0 0;
+  gap: var(--gap-xl);
+}
+.shop4 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-black);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-20xl) var(--padding-8xs) var(--padding-240xl);
+  box-sizing: border-box;
+  gap: var(--gap-250xl-5);
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-size: var(--font-size-mini);
+  color: var(--color-crimson-100);
+  font-family: var(--font-jost);
+}
+@media screen and (max-width: 750px) {
+  .tbd-shop {
+    font-size: var(--font-size-37xl);
+  }
+  .shop4 {
+    gap: var(--gap-116xl);
+  }
+}
+@media screen and (max-width: 675px) {
+  .footer2 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .tbd-shop {
+    font-size: var(--font-size-23xl);
+  }
+  .shop4 {
+    gap: var(--gap-48xl);
+  }
+}
